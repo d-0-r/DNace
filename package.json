@@ -1,16 +1,16 @@
 {
-  "name": "DNayyy",
+  "name": "DNace",
   "version": "1.0.0",
   "main": "index.js",
   "keywords": "Bioinformatics, FASTA analysis, DNA sequencing",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/Dor-Ron/DNayyy"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dor-Ron/DNace"
   },
   "author": "Dor Rondel <dorxrondel@gmail.com>",
   "scripts": {
     "dev": "webpack",
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --content-base src --inline --hot",
     "styl": "cd dev/styl && stylus -w style.styl -o ../../src/"
   },
   "license": "ISC",
@@ -24,17 +24,12 @@
     "cross-env": "^1.0.8",
     "css-loader": "^0.23.1",
     "expect": "^1.20.1",
+    "history": "^1.7.0",
     "node-libs-browser": "^1.0.0",
-    "node-sass": "^3.8.0",
     "react": "^15.1.0",
     "react-addons-test-utils": "^15.1.0",
     "react-dom": "^15.1.0",
-    "react-redux": "^4.4.5",
-    "redux": "^3.5.2",
-    "redux-logger": "^2.6.1",
-    "redux-promise": "^0.5.3",
-    "redux-thunk": "^2.1.0",
-    "sass-loader": "^4.0.0",
+    "react-router": "^2.6.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
