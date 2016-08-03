@@ -17,7 +17,7 @@ class App extends React.Component {
             <div className="desc-container">
               <p> Simply upload or paste in a FASTA formatted DNA string and
               get a quick analysis of the sequence including: &nbsp;
-              <span className="QWE"><b>gc content, amino acid composition, graphs, and more!</b></span></p>
+              <span className="keywords"><b>gc content, amino acid composition, graphs, and more!</b></span></p>
             </div>
             <ul>
               <li className="upload-btn">
@@ -25,12 +25,24 @@ class App extends React.Component {
                 <i className="material-icons right">file_upload</i>Upload</a>
               </li>
               <li className="paste-btn">
-                <a className="waves-effect waves-light btn red">
+                <a className="waves-effect waves-light btn red modal-trigger" href="#pasteFASTA">
                 <i className="material-icons right">content_paste</i>Paste</a>
               </li>
             </ul>
           </div>
         </div>
+
+        <div id="pasteFASTA" className="modal">
+        <div className="modal-content">
+          <h4>Paste Your DNA String Below</h4>
+          <h6>Include identifying FASTA header</h6>
+          <textarea placeholder="Enter DNA string" className="dnaInput"></textarea>
+        </div>
+        <div className="modal-footer">
+          <a href="#!" className="modal-action modal-close waves-effect waves-green btn red"><i className="material-icons right">done</i>Submit</a>
+        </div>
+      </div>
+
       </main>
     )
   }
