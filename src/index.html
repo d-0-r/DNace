@@ -10,13 +10,15 @@
   </head>
 
   <body>
+      <!-- Initial div for React to bind to -->
       <div id="app"></div>
+
       <script src="./js/bundle.min.js"></script>
       <script src="./bower_components/jquery/dist/jquery.min.js"></script>
       <script src="./bower_components/materialize/dist/js/materialize.min.js"></script>
       <script>
-      $(document).ready(function(){
-       // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+      //need the following onReady fn for pasting DNA modal
+      $(() => {
        $('.modal-trigger').leanModal();
       });
       </script>
