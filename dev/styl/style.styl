@@ -1,10 +1,68 @@
-body
-  background-image url(./pattern.svg)
-  color rgb(255, 255, 255)
-  text-align: center
+darkGrey = #424242
+lightRed = #F44336
 
 main
-  margin-top 12%
+  background-image url(./pattern.svg)
+  min-height 100vh
+  min-width 100vw
+  text-align center
+  font-size 19px
+  color white
 
-.upload-btn
+#h1
+  margin-bottom: -0.1px
+  font-size: 80px
+  line-height: 20px;
+
+#dn
+  font-family: 'Allerta', sans-serif;
+  font-size: 10px
+
+#ace
+  font-family: 'Electrolize', sans-serif;
+
+#joke
+  font-family: 'Montez', cursive;
+
+.upload-btn, .paste-btn
+  display inline
   margin-right 2em
+  font-size 16px
+
+.QWE
+  font-family: 'Electrolize', sans-serif;
+
+/* For computers and tablets */
+@media (min-width: 900px)
+  .descrip
+    margin-top 20vh
+
+  .desc-container
+    padding-left 30px
+    padding-right 30px
+
+  .pitch
+    font-size 27px
+
+  ul
+    margin-top 50px
+
+/* make buttons on seperate lines on phones */
+@media (max-width: 475px)
+  main
+    font-size 13px
+
+  #h1
+    font-size 55px
+    line-height 30px
+
+  .upload-btn, .paste-btn
+    display block
+    margin-left 0em
+    font-size 9px
+
+  .paste-btn
+    margin-top 2em
+
+  .pitch
+    font-size 18px

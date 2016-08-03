@@ -8,14 +8,29 @@ class App extends React.Component {
 
   render() {
     return (
-      <main>
-        <h1> DNace </h1>
-        <h6> (Yes, the name is an intentional bad pun) </h6><br/>
-        <h4> Your basic DNA string sequencing made easy! </h4><br/>
-        <h5> Simply upload or paste in a FASTA formatted DNA string and </h5><br/>
-        <h5> get a quick analysis of the sequence including graphs and more! </h5><br/><br/>
-        <a className="waves-effect waves-light btn red upload-btn"><i className="material-icons right">file_upload</i>Upload</a>
-        <a className="waves-effect waves-light btn red paste-btn"><i className="material-icons right">content_paste</i>Paste</a>
+      <main className="container">
+        <div className="row">
+          <div className="offset-s3 col s6 descrip">
+            <p id="h1"><span id="DN">DN</span><span id="ace">ace</span></p>
+            <p id="joke"> (Yes, the name is an intentional bad pun) </p>
+            <p className="pitch"> Your basic DNA string sequencing made easy! </p>
+            <div className="desc-container">
+              <p> Simply upload or paste in a FASTA formatted DNA string and
+              get a quick analysis of the sequence including: &nbsp;
+              <span className="QWE"><b>gc content, amino acid composition, graphs, and more!</b></span></p>
+            </div>
+            <ul>
+              <li className="upload-btn">
+                <a className="waves-effect waves-light btn grey darken-3">
+                <i className="material-icons right">file_upload</i>Upload</a>
+              </li>
+              <li className="paste-btn">
+                <a className="waves-effect waves-light btn red">
+                <i className="material-icons right">content_paste</i>Paste</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </main>
     )
   }
