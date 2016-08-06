@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "webpack",
     "start": "webpack-dev-server --content-base src --inline --hot",
-    "styl": "cd dev/styl && stylus -w style.styl -o ../../src/"
+    "styl": "cd dev/styl && stylus -w index.styl -o ../../src/"
   },
   "license": "ISC",
   "dependencies": {
@@ -21,9 +21,13 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
     "babel-register": "^6.9.0",
+    "body-parser": "^1.15.2",
     "cross-env": "^1.0.8",
     "css-loader": "^0.23.1",
+    "ejs": "^2.5.1",
     "expect": "^1.20.1",
+    "express": "^4.14.0",
+    "express-fileupload": "0.0.5",
     "history": "^1.7.0",
     "node-libs-browser": "^1.0.0",
     "react": "^15.1.0",
@@ -39,6 +43,7 @@
   "devDependencies": {
     "babel-plugin-react-transform": "^2.0.2",
     "babel-preset-stage-0": "^6.5.0",
+    "nodemon": "^1.10.0",
     "react-transform-hmr": "^1.0.4"
   }
 }
