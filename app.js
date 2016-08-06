@@ -21,7 +21,7 @@ app.post('/', (req, res) => {
         res.send('No files were uploaded.');
         return;
     }
-    sampleFile = req.files.uploadedFASTA;
+    sampleFile = req.files.uploadedFASTA; // name attribute in form from ./dev/js/components/Upload.js
     sampleFile.mv(path.join(__dirname + '/uploadedFiles/' + sampleFile.name), function(err) {
         if (err) {
             res.status(500).send(err);
