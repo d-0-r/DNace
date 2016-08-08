@@ -54,6 +54,7 @@ class DnaAnalyzer {
 
   parseFASTA(dnaString, callback) {
     let offset = 0;
+    // if header, get header, add to onset so we know header length
     for (let idx = 0; idx < dnaString.length; idx++) {
       if (dnaString[0] === '>') {
         if (dnaString[idx] !== '\n') {
@@ -63,6 +64,7 @@ class DnaAnalyzer {
       }
     }
 
+    // continue parsing DNA from offset index aka after header
     for (let idx = offset+1; idx < dnaString.length; idx++){
       this.sequence += dnaString[idx];
     }
@@ -166,6 +168,4 @@ class DnaAnalyzer {
   }
 }
 
-// let d = new DnaAnalyzer();
-// d.readFASTA('../uploadedFiles/', 'sequence.fasta');
 module.exports.DnaAnalyzer = DnaAnalyzer;

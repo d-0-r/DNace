@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <link rel="stylesheet" href="./bower_components/materialize/dist/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Electrolize|Montez|Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/results.css" />
     <title>Results | DNace</title>
-  </head>
   <body>
+
+    <div id="reportContainer"></div>
+
     <script> let results = <%- JSON.stringify(analyzedFASTA); %></script>
+    <script src="./js/bundle2.min.js"></script>
   </body>
 </html>

@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "webpack",
     "start": "webpack-dev-server --content-base src --inline --hot",
-    "styl": "cd dev/styl && stylus -w index.styl -o ../../src/"
+    "styl": "cd dev/styl && stylus -w index.styl -o ../../src/styles/",
+    "express": "nodemon"
   },
   "license": "ISC",
   "dependencies": {
@@ -28,12 +29,10 @@
     "expect": "^1.20.1",
     "express": "^4.14.0",
     "express-fileupload": "0.0.5",
-    "history": "^1.7.0",
     "node-libs-browser": "^1.0.0",
     "react": "^15.1.0",
     "react-addons-test-utils": "^15.1.0",
     "react-dom": "^15.1.0",
-    "react-router": "^2.6.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
