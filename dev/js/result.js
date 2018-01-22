@@ -6,4 +6,4 @@ import ResultLayout from './components/ResultLayout';
 
 const div = document.querySelector('#reportContainer');
 
-ReactDOM.render(<ResualtLayout />, div);
+ReactDOM.render(<ResultLayout />, div);
